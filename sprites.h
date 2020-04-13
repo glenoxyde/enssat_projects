@@ -12,13 +12,13 @@
 #ifndef SPRITES_H
 #define SPRITES_H
 
-//structures d�finissant les items du jeu.
+//structures definissant les items du jeu.
 
 
 /**
-*@brief structure repr�sentant une instance du jeu
+*@brief structure representant une instance du jeu
 *		qu'il s'agisse d'un joueur, de la balle, ou d'un point de compteur
-*		�labor� � partir des arguments de dessiner_rectangle
+*		elabore a partir des arguments de dessiner_rectangle
 */
 struct sprite{
 		unsigned int x;
@@ -37,16 +37,16 @@ typedef struct sprite SPRITE;
 	
 	
 /**
-*@brief structure repr�sentant la balle du jeu
-*		elle est constitu�e d'�l�ments graphiques (grph)
-*		et d'�l�ments "logiciels" (dir_x/y) 
-* On d�finit ainsi enti�rement la balle (toutes ses caract�ristiques)
+*@brief structure representant la balle du jeu
+*		elle est constituee d'elements graphiques (grph)
+*		et d'elements "logiciels" (dir_x/y) 
+* On definit ainsi entierement la balle (toutes ses caracteristiques)
 *
 */
 struct ball{
 	int dir_x;
 	int dir_y;
-	SPRITE grph;//�l�ment graphique de l'�l�ment ball
+	SPRITE grph; //element graphique de l'element ball
 };
 
 typedef struct ball BALL;
@@ -55,8 +55,8 @@ typedef struct ball BALL;
 	
 	
 /**
-*@brief structure repr�sentant le compteur de points
-*	elle est constitu�e de 6 sprites
+*@brief structure representant le compteur de points
+*	elle est constituee de 6 sprites
 *
 */
 struct points{
