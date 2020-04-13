@@ -25,8 +25,8 @@ void init_sound(void){
 	GPIO_SetDir(1,(1<<9),1);
 }
 
-//ces modules ont un probl�me : si deux sons se produisent en m�me temps, le son est coup�
-//les timers s'arr�tent.
+//ces modules ont un probleme : si deux sons se produisent en meme temps, le son est coupe
+//les timers s'arretent.
 
 void bip_high(void){
 	TIM_UpdateMatchValue(LPC_TIM0, 0, 1);
