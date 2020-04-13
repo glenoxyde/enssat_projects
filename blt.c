@@ -58,7 +58,7 @@ void init_blt(void){
 //===========================================================//
 
 /**
-*@brief dans cette interruption (UART0) on met le flag PLAYER_INPUT � true
+*@brief dans cette interruption (UART0) on met le flag PLAYER_INPUT a true
 *
 */
 void UART0_IRQHandler(){
