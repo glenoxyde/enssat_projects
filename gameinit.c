@@ -23,11 +23,11 @@
 
 void gameinit(void){
 
-		//variables d�finisssant la position des joueurs
+		//variables definisssant la position des joueurs
 		int PLAYER_1_x = 90;
 		int player2_x = 90;
 
-		//affecte des valeurs � chacun des �l�ments joueurs ci-dessus
+		//affecte des valeurs a chacun des elements joueurs ci-dessus
 		PLAYER_1.x = PLAYER_1_x; 
 		PLAYER_2.x = player2_x;
 		PLAYER_1.y = 0;
@@ -46,11 +46,11 @@ void gameinit(void){
 		PLAYER_2.bg_color = White;
 		
 
-		//affecte des valeurs � l'�l�ment balle
-		//�l�ments logiciels
+		//affecte des valeurs a l'element balle
+		//elements logiciels
 		BALL0.dir_x = 0;
 		BALL0.dir_y = 0;
-		//�l�ments graphiques
+		//elements graphiques
 		BALL0.grph.x = 115;
 		BALL0.grph.y = 156;
 		BALL0.grph.lng = 8;
