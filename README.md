@@ -6,6 +6,7 @@
 
 L'objectif du projet est de développer une application sur microcontrôleur (modèle LPC1768 Cortex M3).
 Dans notre cas, il s'agit du fameux jeu PONG des années 80.
+Ce MarkDown ne rentrera pas dans les détails de programmation. 
 
 ## Fonctionnalités implémentées
 
