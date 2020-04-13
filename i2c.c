@@ -45,13 +45,13 @@ void store_word(uint8_t word, uint16_t address){
 	
 	I2C_M_SETUP_Type data_tx_cfg;
 	
-	uint8_t page = ((address & 0x700)>>8); //masque de r�cup�ration de la page (adresse haute)
-	uint8_t w_address = address & 0xff; //masque de r�cup�ration de l'adresse basse
+	uint8_t page = ((address & 0x700)>>8); //masque de recuperation de la page (adresse haute)
+	uint8_t w_address = address & 0xff; //masque de recuperation de l'adresse basse
 	
-	uint8_t SL_ADDR = MEM_ADDR | page; //on cr�e le premier octet envoy� (adresse haute)
+	uint8_t SL_ADDR = MEM_ADDR | page; //on cree le premier octet envoye (adresse haute)
 	
 	uint8_t NewData[WSIZE]; 
-	NewData[0] = w_address; //l'adresse basse est stock�e dansles donn�es � transmettre
+	NewData[0] = w_address; //l'adresse basse est stockee dansles donnees a transmettre
 	NewData[1] = word;
 
 	data_tx_cfg.sl_addr7bit = SL_ADDR; //adresse "physique" + adresse haute (page)
@@ -85,8 +85,8 @@ void fetch_data(uint8_t * data, uint8_t len, uint16_t address){
 
 	I2C_M_SETUP_Type data_rx_cfg;
 	uint8_t pointeur[1];
-	uint8_t page = ((address & 0x700)>>8); //masque de r�cup�ration de la page (adresse haute)
-	uint8_t w_address = address & 0xff; //masque de r�cup�ration de l'adresse basse
+	uint8_t page = ((address & 0x700)>>8); //masque de recuperation de la page (adresse haute)
+	uint8_t w_address = address & 0xff; //masque de recuperation de l'adresse basse
 	
 	uint8_t SL_ADDR = MEM_ADDR | page;
 	pointeur[0]=w_address;	
