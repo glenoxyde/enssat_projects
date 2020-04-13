@@ -23,16 +23,16 @@ void init_display(void){
 void refresh_display(SPRITE player1, SPRITE player2, POINTS counter, BALL ball){
 
 		/*
-		* ici un petit probl�me : le rectangle des joueurs reste affich� lors du refresh
-		* pour �viter cela, on affiche un rectangle noir par dessus � chaque refresh
-		* peu �l�gant comme solution
-		* m�me probl�me pour la balle
+		* ici un petit probleme : le rectangle des joueurs reste affiche lors du refresh
+		* pour eviter cela, on affiche un rectangle noir par dessus a chaque refresh
+		* peu elegant comme solution
+		* meme probleme pour la balle
 		*/
 	
 	dessiner_rect(0,0,240,player1.lrg,player1.e,1,Black,Black); //fond noir J1
 	dessiner_rect(0,player2.y,240,player2.lrg,player2.e,1,Black,Black); //fond noir J2
 
-	dessiner_ligne(0,160,240,1,'h',White); // ligne m�diane
+	dessiner_ligne(0,160,240,1,'h',White); // ligne mediane
 
 	
 	//barre du joueur 1
@@ -44,16 +44,16 @@ void refresh_display(SPRITE player1, SPRITE player2, POINTS counter, BALL ball){
 		player2.e, player2.plein, player2.e_color, player2.bg_color);
 
 
-	// "ombre" de la balle, qui efface sa trace � chaque refresh(si on l'enl�ve la balle laisse une train�e blanche)
+	// "ombre" de la balle, qui efface sa trace a chaque refresh(si on l'enleve la balle laisse une trainee blanche)
 	dessiner_rect(ball.grph.x-ball.dir_x, ball.grph.y-ball.dir_y, ball.grph.lng, ball.grph.lrg,
 		ball.grph.e, ball.grph.plein, Black, Black);
 
-	//rectangle repr�sentant la balle
+	//rectangle representant la balle
 	dessiner_rect(ball.grph.x, ball.grph.y, ball.grph.lng, ball.grph.lrg,
 		ball.grph.e, ball.grph.plein, ball.grph.e_color, ball.grph.bg_color);
 	
 
-	//rectangles repr�sentant le compteur de points
+	//rectangles representant le compteur de points
 	dessiner_rect(counter.L1.x, counter.L1.y, counter.L1.lng, counter.L1.lrg, 
 			counter.L1.e, counter.L1.plein, counter.L1.e_color, counter.L1.bg_color);
 	
