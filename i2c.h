@@ -20,9 +20,9 @@ void mem_init(void);
 
 
 /**
-*@brief permet de stocker un seul octet dans la m�moire
+*@brief permet de stocker un seul octet dans la memoire
 *
-*@param[in] l'entier (mot) � stocker, et son adresse
+*@param[in] l'entier (mot) a stocker, et son adresse
 */
 void store_word(uint8_t word, uint16_t address);
 
@@ -30,9 +30,9 @@ void store_word(uint8_t word, uint16_t address);
 
 
 /**
-*@brief simple r�p�tition de store_word pour chaque �l�ment d'un tableau
+*@brief simple repetition de store_word pour chaque element d'un tableau
 *
-*@param[in] tableau contenant les donn�es � stocker, longueur du tableau, et adressse du stockage
+*@param[in] tableau contenant les donnees a stocker, longueur du tableau, et adressse du stockage
 */
 void store_data(uint8_t * data, uint8_t len, uint8_t address);
 
@@ -40,10 +40,10 @@ void store_data(uint8_t * data, uint8_t len, uint8_t address);
 
 
 /**
-*@brief permet de r�cup�rer un ou pluseurs mots dans un buffer
+*@brief permet de recuperer un ou pluseurs mots dans un buffer
 *
-*@param[in] nombre de donn�es contingentes � r�cup�rer, et adresse des donn�es
-*@param[out] tableau qui va contenir les donn�es lues dans la m�moire
+*@param[in] nombre de donnees contingentes a recuperer, et adresse des donnees
+*@param[out] tableau qui va contenir les donnees lues dans la memoire
 */
 void fetch_data(uint8_t * data, uint8_t len, uint16_t address);
 
@@ -51,7 +51,7 @@ void fetch_data(uint8_t * data, uint8_t len, uint16_t address);
 
 
 /**
-*@brief sauvegarde dans la m�moire quel joueur a gagn� lors de la pr�c�dente partie
+*@brief sauvegarde dans la memoire quel joueur a gagne lors de la precedente partie
 *
 */
 void save_who_wins(void);
@@ -60,7 +60,7 @@ void save_who_wins(void);
 
 
 /**
-*@brief restitue de la m�moire quel joueur a gagn� lors de la pr�c�dente partie
+*@brief restitue de la memoire quel joueur a gagne lors de la precedente partie
 *
 */
 void who_won_last_time(void);
@@ -69,7 +69,7 @@ void who_won_last_time(void);
 
 
 /**
-*@brief sauvegarde dans la m�moirel'�tat actuel du jeu :
+*@brief sauvegarde dans la memoirel'etat actuel du jeu :
 *		position en X des joueurs
 *		position en X Y de la balle
 *		direction en X Y de la balle
@@ -82,7 +82,7 @@ void save_state(void);
 
 
 /**
-*@brief restitue dans les structures ad�quates les donn�es sauvegard�es dans save_state
+*@brief restitue dans les structures adequates les donnees sauvegardees dans save_state
 *
 */
 void resume(void);
@@ -91,7 +91,7 @@ void resume(void);
 
 
 /**
-*@brief efface (remplis de z�ros) l'espace m�morie utilis� pour sauvegarder l'�tat du jeu
+*@brief efface (remplis de zeros) l'espace memorie utilise pour sauvegarder l'etat du jeu
 *
 */
 void wipe_save(void);
