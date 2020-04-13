@@ -1,9 +1,9 @@
 //===========================================================//
 // Projet Micro - INFO1 - ENSSAT - S2 2018							 //
 //===========================================================//
-// File                : Programme final : bon � rendre
+// File                : Programme final : à rendre
 // Hardware Environment: Open1768	
-// Build Environment   : Keil �Vision
+// Build Environment   : Keil uVision
 //===========================================================//
 
 /**
@@ -26,7 +26,7 @@
 #include "touch\touch_panel.h"
 #include "blt.h"
 #include "lpc17xx_i2c.h"
-#include "globaldec.h" // fichier contenant toutes les d�clarations de variables globales
+#include "globaldec.h" // fichier contenant toutes les declarations de variables globales
 #include "constantes.h"
 #include "i2c.h" 
 #include "gameinit.h"
@@ -52,10 +52,10 @@ int main(void){
 		lcd_Initializtion();					//affichage LCD (bas niveau)
 		init_display();							//initialise l'affichage (haut niveau)
 		gameinit();									//initialise les instances du jeu
-		init_timer();								//pr�pare les timers 
-		init_sound();								//pr�pare le pinsel vers le haut parleur
+		init_timer();								//prepare les timers 
+		init_sound();								//prepare le pinsel vers le haut parleur
 		touch_init();								//interactions tactiles
-		mem_init();									//initialise la m�moire
+		mem_init();									//initialise la memoire
 	
 //================FIN INITIALISATIONS================//
 	
@@ -65,7 +65,7 @@ int main(void){
 	
 		store_data((uint8_t *)P1WIN, LEN_P1WIN, AD_P1WIN);
 		store_data((uint8_t *)P2WIN, LEN_P2WIN, AD_P2WIN);
-		//on n'est pas oblig� de r��crire ceci syst�matiquement, c'est juste un test
+		//on n'est pas oblige de reecrire ceci systematiquement, c'est juste un test
 		
 //================FIN TEST MEMOIRE==============//	
 
