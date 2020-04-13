@@ -14,7 +14,7 @@
 #include "LPC17xx_timer.h"
 #include "LPC17xx_gpio.h"
 #include "LPC17xx.h"
-//initialisation, d�marrage, interrtupts
+//initialisation, demarrage, interrtupts
 
 void init_timer(void){
 	TIM_TIMERCFG_Type TIMER_CFG;
@@ -37,7 +37,7 @@ void init_timer(void){
 	NVIC_EnableIRQ(TIMER0_IRQn);
 	
 	
-	//config timer 2 : pour la dur�e de la note
+	//config timer 2 : pour la duree de la note
 	TIMER_CFG.PrescaleOption = TIM_PRESCALE_TICKVAL;
 	TIMER_CFG.PrescaleValue = 500;
 	
@@ -75,7 +75,7 @@ void init_timer(void){
 
 
 /**
-*@brief dans cette interruption(TIM0) on produit le son� proprement parler
+*@brief dans cette interruption(TIM0) on produit le son a proprement parler
 *
 */
 void TIMER0_IRQHandler(void){
@@ -85,7 +85,7 @@ void TIMER0_IRQHandler(void){
 }
 
 /**
-*@brief dans cette interruption  (TIM1) on �teint le timer 0 (fin du son) 
+*@brief dans cette interruption  (TIM1) on eteint le timer 0 (fin du son) 
 *
 */
 void TIMER1_IRQHandler(void){
