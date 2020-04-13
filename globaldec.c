@@ -17,14 +17,14 @@
 char chaine[30]; // buffer pour l'affichage sur le LCD
 uint16_t touch_x, touch_y ;
 
-bool PLAYER_INPUT; //bool�en de d�tection d'input
+bool PLAYER_INPUT; //booleen de detection d'input
 bool REPLAY = true; //rejouer
-bool GAME = true; //jeu allum� ou non
-bool PLAY_START = false; //commencer � jouer
+bool GAME = true; //jeu allume ou non
+bool PLAY_START = false; //commencer a jouer
 
 
 bool SETTINGS = false; //affichage des settings
-bool SOUND = true; //true = allum�
+bool SOUND = true; //true = allume
 bool DEMO = true; //true = jeu automatique
 bool PAUSE = false; //pause du jeu
 
@@ -41,8 +41,8 @@ uint8_t OUTPUT_BUF_LEN =30; //longueur du buffer d'output
 
 /**
 * variables d'items accessibles par toutes les fonctions du jeu
-* les types SPRITE BALL et POINTS sont d�clar�s dans sprite.h
-*	il s'agit d'une instanciation des �l�ments du jeu
+* les types SPRITE BALL et POINTS sont declares dans sprite.h
+*	il s'agit d'une instanciation des elements du jeu
 */
 SPRITE PLAYER_1;
 SPRITE PLAYER_2;
