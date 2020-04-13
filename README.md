@@ -15,7 +15,7 @@ Dans notre cas, il s'agit du fameux jeu PONG des années 80.
   * Couper/Activer le son
   * Désactiver/Activer le mode démo (deux IA)
 * Lancer le jeu depuis le menu
-* Reprendre une partie précédente avec *Resume* (*cf* Problèmes connus)
+* Reprendre une partie précédente avec *Resume* (*cf* [Problèmes connus](Problèmes-connus))
 * Contrôler **un** joueur avec les touches **a** et **d** (bluetooth)
 * Mettre le jeu en pause avec la touche **espace**
   * Mettre en pause a pour effet de sauvegarder automatiquement l'état de la partie en mémoire (comme une sauvegarde du contexte)
@@ -25,7 +25,7 @@ Dans notre cas, il s'agit du fameux jeu PONG des années 80.
     * Retour menu principal
 * Lorsqu'un joueur gagne la partie  :
   * Proposition de recommencer
-  * Si on ne souhaite par recommencer, le jeu se termine. 
+  * Si on ne souhaite par recommencer, le jeu se termine.
   * Quoi qu'il arrive, le dernier joueur à avoir gagné aura la main lors d'une nouvelle partie (sauvegardé en mémoire)
 
 ## Foncitonnalités à implémenter
@@ -39,7 +39,7 @@ Dans notre cas, il s'agit du fameux jeu PONG des années 80.
 * Implémenter des niveaux : développer une IA dont la vitesse est limitée
 * Donner aux joueur le choix des couleurs (étant donné la simplicité d'utilisation de l'écran tactile, le développelent d'options de personnalisation est facile)
 
-## Problèmes connus
+[Problèmes connus](##-Problèmes-connus)
 
 * La sauvegarde (lors de la pause) fonctionne, mais la restitution du contexte pose souvent problème. On a alors un plantage du comportement de la balle.
 * La générations de sons fonctionne, mais si deux sons sont trop rapprochés dans le temps et se chevauchent, le timer s'éteint, et le son s'arrête de fonctionner
@@ -60,10 +60,13 @@ Chaque module a été développé et testé séparément, puis assemblé à la f
 
 ## Contrôles
 
-Navigation tactile dans les menus. 
+Ne possédant pas de terminal android, j'ai installé l'application Bluetooth Serial Terminal, disponible sur le Windows Store.
+L'envoi de caractères ASCII vers la carte ne pose pas de problèmes, et sert à contrôler le joueur. (Il faut au préalable désactiver le mode démo depuis les réglages, dans le menu principal ou le menu pause).
 
-Déplacer le joueur à droite : touche **d**.
+* Navigation tactile dans les menus.
 
-Déplacer le joueur à droite : touche **a**.
+* Déplacer le joueur à droite : touche **d**.
 
-Mettre le jeu en pause : touche **espace**.
+* Déplacer le joueur à droite : touche **a**.
+
+* Mettre le jeu en pause : touche **espace**.
