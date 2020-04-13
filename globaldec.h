@@ -17,8 +17,9 @@
 #define G_DEC_H
 
 /**
-* Pour la description des d�clarations globales, voir :
+* Pour la description des declarations globales, voir :
 *				globaldec.C
+* Fichier utilise a la place de global.h
 */ 
 
 
