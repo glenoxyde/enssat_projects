@@ -14,11 +14,11 @@ Ce MarkDown ne rentrera pas dans les détails de programmation.
   * Navigations dans les menus avec l'écran tactile
 * Réglages
   * Couper/Activer le son
-  * Désactiver/Activer le mode démo (deux IA)
+  * Désactiver/Activer le mode démo (deux IA, activé par défaut)
 * Lancer le jeu depuis le menu
 * Reprendre une partie précédente avec *Resume* (*cf* Problèmes connus)
 * Contrôler **un** joueur avec les touches **a** et **d** (bluetooth)
-* Mettre le jeu en pause avec la touche **espace**
+* Mettre le jeu en pause avec la touche **espace** (bluetooth)
   * Mettre en pause a pour effet de sauvegarder automatiquement l'état de la partie en mémoire (comme une sauvegarde du contexte)
   * Depuis le menu pause :
     * Reprendre la partie
@@ -26,10 +26,10 @@ Ce MarkDown ne rentrera pas dans les détails de programmation.
     * Retour menu principal
 * Lorsqu'un joueur gagne la partie  :
   * Proposition de recommencer
-  * Si on ne souhaite par recommencer, le jeu se termine.
+  * Si on ne souhaite pas recommencer, le jeu se termine.
   * Quoi qu'il arrive, le dernier joueur à avoir gagné aura la main lors d'une nouvelle partie (sauvegardé en mémoire)
 
-## Foncitonnalités à implémenter
+## Fonctionnalités à implémenter
 
 * Réglages :
   * Changer de contôles : utiliser l'écran tactile pour contrôler les joueurs
@@ -45,7 +45,7 @@ Ce MarkDown ne rentrera pas dans les détails de programmation.
 * La sauvegarde (lors de la pause) fonctionne, mais la restitution du contexte pose souvent problème. On a alors un plantage du comportement de la balle.
 * La générations de sons fonctionne, mais si deux sons sont trop rapprochés dans le temps et se chevauchent, le timer s'éteint, et le son s'arrête de fonctionner
 
-Je n'ai pas eu le temps de débugger ces problèmes.
+Je n'ai pas eu le temps de débugger ces problèmes, mais ils sont liés principalement au jeu lui même, car les procédures développées fonctionnent parfaitement hors du jeu. 
 
 ## Modules
 
