@@ -76,14 +76,14 @@ void dir_ball(BALL * ball, SPRITE player1, SPRITE player2, int speed){
 	
 		if ((*ball).grph.x==DOWN_BALL_LIM){ //si la balla atteint une limite, elle change de direction
 			(*ball).dir_x = 1*speed;
-			if (SOUND) bip_low(); //selon le r�glage du son, on �met les bips ou non
+			if (SOUND) bip_low(); //selon le reglage du son, on emet les bips ou non
 		}
 		if ((*ball).grph.x==UP_BALL_LIM-5){
 			(*ball).dir_x = -1*speed;
 			if (SOUND) bip_low();
 		}
 		
-		//impl�mentation des interactions avec les joueurs
+		//implementation des interactions avec les joueurs
 		//joueur1
 		if ((*ball).grph.y==player1.y+5 && ((*ball).grph.x>=player1.x && (*ball).grph.x<=player1.x+30)){
 			if ((*ball).dir_x>0){
@@ -245,10 +245,10 @@ void pause(void){
 void menu(void){
 	
 	/*
-	*	Pour tout ce qui converne les menus, il aurait �t� de bon gout de d�velopper 
-	*	une v�ritable interface : une nouvelle structure BOUTON faisant figurer des champs 
-	*	texte, coordonn�es etc ...
-	*	Ici, j'ai tout fait � la main directement dans la proc�dure
+	*	Pour tout ce qui converne les menus, il aurait ete de bon gout de developper 
+	*	une veritable interface : une nouvelle structure BOUTON faisant figurer des champs 
+	*	texte, coordonnees etc ...
+	*	Ici, j'ai tout fait e la main directement dans la procedure
 	*/
 	
 	touch_y = 0;
@@ -351,10 +351,10 @@ void replay(void){
 	sprintf(chaine, "Yes");
 	LCD_write_english_string (70,160,chaine,White,Black);
 	
-	dessiner_rect(58, 143, 50, 50, 1, 0, White, Black); //contour cosm�tique
+	dessiner_rect(58, 143, 50, 50, 1, 0, White, Black); //contour cosmetique
 	sprintf(chaine, "No");
 	LCD_write_english_string (160,160,chaine,White,Black);
-	dessiner_rect(143, 143, 50, 50, 1, 0, White, Black); //contour cosm�tique
+	dessiner_rect(143, 143, 50, 50, 1, 0, White, Black); //contour cosmetique
 
 	touch_y = 0;
 	touch_x = 0;
