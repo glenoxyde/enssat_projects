@@ -10,10 +10,8 @@
 
 #include "sprites.h"
 
-//� appeler � la fin du while(1) du main
-
 /**
-*@brief initialise l'�cran au d�but de la partie avec un simple �cran noir
+*@brief initialise l'ecran au debut de la partie avec un simple ecran noir
 *
 */
 void init_display(void);
@@ -22,9 +20,9 @@ void init_display(void);
 
 
 /**
-*@brief met � jour l'affichage du jeu, (tous les �l�ments susceptibles de changer d'�tat) : 
+*@brief met a jour l'affichage du jeu, (tous les elements susceptibles de changer d'etat) : 
 * 
-*@param[in] les structures des �l�ments du jeu: les joueurs, le compteur de points et la balle
+*@param[in] les structures des elements du jeu: les joueurs, le compteur de points et la balle
 */
 void refresh_display(SPRITE player1, SPRITE player2, POINTS counter, BALL ball);
 
